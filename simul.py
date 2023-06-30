@@ -1,6 +1,7 @@
 import novo_carro
 import semaforo
 import time
+import calc_media
 
 def simula():
     #var int pra controlar o tempo gasto dentro do sinal
@@ -51,3 +52,4 @@ def simula():
     #ajuda testar
     print(carros)
     print(control_tempo)
+    calc_media.calc(carros,control_tempo)
