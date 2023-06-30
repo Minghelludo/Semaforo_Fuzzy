@@ -1,0 +1,4 @@
+import simul
+
+
+simul.simula()
