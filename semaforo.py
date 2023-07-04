@@ -1,7 +1,7 @@
 #controlar simples pode modificar o tempo pelo divisor
-def controlador_simples(tempo,estado):
+def controlador_simples(tempo, estado, duracao):
     #se divisivel pelo tempo determinado, muda o sinal
-    if (tempo % 15) == 0:
+    if (tempo % duracao) == 0:
         if estado == False:
             print("Abrindo")
             return True

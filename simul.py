@@ -3,7 +3,7 @@ import semaforo
 import time
 import calc_media
 
-def simula():
+def simula(duracao):
     #var int pra controlar o tempo gasto dentro do sinal
     carros = []
     #array para controlar o tempo médio gasto de cada carro, ao sair o tempo decorrido é movido para esse array
@@ -17,10 +17,10 @@ def simula():
     control_var = 0
     
     #duração da simulação
-    while tempo <= 60:
+    while tempo <= duracao*5:
 
         #controla o semáforo baseado num temporizador simples
-        estado = semaforo.controlador_simples(tempo,estado)
+        estado = semaforo.controlador_simples(tempo, estado, duracao)
 
         #adiciona 1 "segundo" a cada carro "por segundo" decorrido
         control_var = 0
@@ -52,4 +52,4 @@ def simula():
     #ajuda testar
     print(carros)
     print(control_tempo)
-    calc_media.calc(carros,control_tempo)
+    calc_media.calc(carros,control_tempo, duracao)

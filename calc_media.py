@@ -1,4 +1,4 @@
-def calc(tempos1,tempos2):
+def calc(tempos1,tempos2, duracao):
     total = 0
 
     controle = 0
@@ -13,4 +13,4 @@ def calc(tempos1,tempos2):
     
     quantidade = len(tempos1) + len(tempos2)
     media = total / quantidade
-    print("\nMédia:",media)
+    print(f'\nMédia com {duracao} segundos: {media}')
