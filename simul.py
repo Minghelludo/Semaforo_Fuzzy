@@ -30,7 +30,7 @@ def simula(duracao):
             control_var = control_var + 1
 
         #entrada de novos carros
-        carros = novo_carro.entrada_2_em_2(carros,tempo)
+        carros = novo_carro.entrada_aleatoria(carros,tempo)
 
         #cotrola a saida
         if estado == True and len(carros) > 0:
@@ -101,7 +101,7 @@ def simula_fuzzy(duracao):
             control_var = control_var + 1
 
         #entrada de novos carros
-        carros = novo_carro.entrada_3_em_3(carros,tempo)
+        carros = novo_carro.entrada_aleatoria(carros,tempo)
 
         #cotrola a saida
         if estado == True and len(carros) > 0:

@@ -1,5 +1,5 @@
 import simul
 #simulação sinal simples
-simul.simular(10)
+simul.simula(30)
 #simulação sinal fuzzy
-simul.simula_fuzzy(10)
+simul.simula_fuzzy(30)
