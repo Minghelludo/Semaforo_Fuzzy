@@ -13,7 +13,7 @@ def calc_simples(tempos1,tempos2, duracao):
     
     quantidade = len(tempos1) + len(tempos2)
     media = total / quantidade
-    print(f'\nMédia com {duracao} segundos: {media}')
+    return media
 
 def calc_fuzzy(tempos1,tempos2):
     total = 0
@@ -30,4 +30,4 @@ def calc_fuzzy(tempos1,tempos2):
     
     quantidade = len(tempos1) + len(tempos2)
     media = total / quantidade
-    print("\nTempo médio:",media)
+    return media
