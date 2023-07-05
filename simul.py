@@ -53,7 +53,7 @@ def simula(duracao):
     #ajuda testar
     print(carros)
     print(control_tempo)
-    calc_media.calc(carros,control_tempo, duracao)
+    calc_media.calc_simples(carros,control_tempo, duracao)
 
 
 
@@ -125,4 +125,4 @@ def simula_fuzzy(duracao):
     #ajuda testar
     print(carros)
     print(control_tempo)
-    calc_media.calc(carros,control_tempo, duracao)
+    calc_media.calc_fuzzy(carros,control_tempo)
